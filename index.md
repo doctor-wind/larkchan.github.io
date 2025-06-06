@@ -1,7 +1,7 @@
 ---
 layout: home
-title: 蚂蚁的花园           # 你想显示的大标题
-list_title: ''        # 设为空字符串即可
+title:            # 你想显示的大标题
+list_title:       # 设为空字符串即可
 ---
 
 欢迎来到「蚂蚁的花园」🌿  
