@@ -1,0 +1,4 @@
+/* 隐藏页脚 footer 大标题（站点名） */
+.footer-heading {
+    display: none;
+}
