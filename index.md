@@ -1,13 +1,4 @@
-# Welcome to My Blog
-
-This is my simple blog written in Markdown.
-
-## Posts:
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})
-    </li>
-  {% endfor %}
-</ul>
+---
+layout: home
+title: 欢迎，我的朋友
+---
