@@ -8,8 +8,17 @@
     display: none !important;
 }
 
-/* 隐藏 RSS 订阅 */
+/* 隐藏老版 minima RSS */
 .feed-subscribe, .feed-subscribe * {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 隐藏新版 minima RSS */
+.rss-subscribe {
     display: none !important;
     visibility: hidden !important;
     height: 0 !important;
