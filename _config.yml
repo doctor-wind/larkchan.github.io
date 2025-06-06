@@ -1,3 +1,9 @@
 title: 蚂蚁的花园
 description: 
 theme: minima
+
+minima:
+  skin: auto
+  social_links: []
+  css:
+    - assets/css/custom.css
