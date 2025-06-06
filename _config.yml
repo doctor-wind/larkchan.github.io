@@ -1,6 +1,10 @@
 title: 蚂蚁的花园
-description: 
+description: 记录一些思考与生活片段
+
 theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 minima:
   skin: auto
