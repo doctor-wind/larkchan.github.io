@@ -1,18 +1,18 @@
 /* 隐藏首页文章列表小标题 */
 .post-list-heading {
-    display: none;
+    display: none !important;
 }
 
 /* 隐藏页脚 footer 大标题（站点名） */
 .footer-heading {
-    display: none;
+    display: none !important;
 }
 
-/* 美化并移动 RSS 订阅链接 */
-.feed-subscribe {
-    display: block;
-    margin-top: 50px;
-    text-align: center;
-    color: #888;
-    font-size: 14px;
+/* 隐藏 RSS 订阅 */
+.feed-subscribe, .feed-subscribe * {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
