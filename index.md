@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 记录           # 你想显示的大标题
+title: 蚂蚁的花园           # 你想显示的大标题
 list_title: ''        # 设为空字符串即可
 ---
 
