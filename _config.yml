@@ -1,13 +1,18 @@
-title: 蚂蚁的花园
-description: 记录一些思考与生活片段
+/* 隐藏首页文章列表小标题 */
+.post-list-heading {
+    display: none !important;
+}
 
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+/* 隐藏页脚 footer 大标题（站点名） */
+.footer-heading {
+    display: none !important;
+}
 
-minima:
-  skin: auto
-  social_links: []
-  css:
-    - assets/css/custom.css
+/* 隐藏 RSS 订阅 */
+.feed-subscribe, .feed-subscribe * {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
