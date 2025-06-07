@@ -25,3 +25,10 @@
     margin: 0 !important;
     padding: 0 !important;
 }
+
+/* ───── Hide duplicate title & description on the home page ───── */
+.home header.post-header,     /* 正文里那块大标题 / 描述 */
+.site-footer .site-title,     /* 页脚左侧标题 */
+.site-footer .site-description {
+  display: none !important;
+}
