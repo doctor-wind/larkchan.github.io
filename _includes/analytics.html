@@ -1,0 +1,13 @@
+{% raw %}{% if jekyll.environment == 'production' %}{% endraw %}
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-09506ENLJ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      page_path: '{{ page.url | relative_url }}'
+    });
+  </script>
+  <!-- End Google Analytics -->
+{% raw %}{% endif %}{% endraw %}
