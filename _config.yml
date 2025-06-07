@@ -7,8 +7,3 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-minima:
-  skin: auto
-  social_links: []
-  css:
-    - assets/css/custom.css
