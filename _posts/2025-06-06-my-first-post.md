@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 尝试新的方式
 date: 2025-06-06 09:00:00 +0800
 ---
