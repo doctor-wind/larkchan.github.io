@@ -40,3 +40,10 @@ a:focus   { text-decoration:underline; }
 */
 /* 隐藏首页 feed-subscribe 按钮 */
 .feed-subscribe { display: none; }
+---
+---
+/* 隐藏中间橙框的 RSS 按钮（含 p 和 a 两种写法） */
+.feed-subscribe,
+.feed-subscribe a {
+  display: none !important;
+}
