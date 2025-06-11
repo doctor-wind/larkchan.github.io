@@ -47,3 +47,6 @@ a:focus   { text-decoration:underline; }
 .feed-subscribe a {
   display: none !important;
 }
+.site-title {
+  display: none;
+}
