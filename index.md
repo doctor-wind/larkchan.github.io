@@ -1,5 +1,5 @@
 ---
 layout: home
-title: 蚂蚁的花园
+title: 
 list_title: 目录
 ---
