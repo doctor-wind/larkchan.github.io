@@ -29,14 +29,84 @@ jobs:
           hugo-version: "0.126.0"
           extended: true
 
+      - name: Show Hugo env
+        run: |
+          hugo version
+          hugo env
+
       - name: Fetch PaperMod theme
         run: |
           rm -rf themes/PaperMod
           mkdir -p themes
           git clone --depth=1 https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
 
+      - name: Ensure minimal config & content
+        run: |
+          echo "👉 Repo owner: ${{ github.repository_owner }}"
+          # 1) config（若不存在则创建最小可用配置）
+          if [ ! -f "config.toml" ] && [ ! -f "config.yaml" ] && [ ! -f "config.yml" ]; then
+            cat > config.toml <<EOF
+baseURL = "https://${{ github.repository_owner }}.github.io/"
+languageCode = "zh-cn"
+title = "我的博客"
+theme = "PaperMod"
+paginate = 10
+[params]
+  defaultTheme = "light"
+  disableThemeToggle = true
+  DateFormat = "2006-01-02"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  mainSections = ["daily","posts"]
+[menu]
+  [[menu.main]]
+    name = "归档"
+    url = "/archives/"
+    weight = 10
+[outputs]
+  home = ["HTML","RSS","JSON"]
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+  daily = "/:year/:month/:day/:slug/"
+EOF
+          fi
+
+          # 2) 归档页
+          mkdir -p content/archives
+          if [ ! -f "content/archives/_index.md" ]; then
+            cat > content/archives/_index.md <<'EOF'
+---
+title: "Archives"
+layout: "archives"
+---
+EOF
+          fi
+
+          # 3) 若没有任何文章，创建一篇占位文章（发布态）
+          COUNT=$(find content -type f -name '*.md' | wc -l || true)
+          if [ "$COUNT" -eq 0 ]; then
+            mkdir -p content/posts
+            cat > content/posts/hello.md <<'EOF'
+---
+title: "Hello PaperMod"
+date: 2025-08-28T09:00:00+08:00
+draft: false
+tags: ["note"]
+cover:
+  hidden: true
+---
+这是自动生成的占位文章，用于验证部署是否成功。看到它说明主题和构建都正常。
+EOF
+          fi
+
+          echo "--------- repo tree ---------"
+          ls -la
+          echo "--------- content tree ------"
+          (ls -R content || true)
+
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --gc
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
