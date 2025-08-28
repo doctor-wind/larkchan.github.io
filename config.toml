@@ -1,6 +1,6 @@
 baseURL = "https://larkchan.github.io/"
 languageCode = "zh-cn"
-title = "Lark 的博客"
+title = "蚂蚁的花园"
 theme = "PaperMod"
 
 [pagination]
@@ -17,7 +17,12 @@ theme = "PaperMod"
 
 [menu]
   [[menu.main]]
-    name = "归档"
+    name = "采蜜见闻"
+    url = "/archives/"
+    weight = 10
+
+      [[menu.main]]
+    name = "碎念集"
     url = "/archives/"
     weight = 10
 
