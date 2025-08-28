@@ -1,34 +1,44 @@
+# -------- 基本 --------
 baseURL = "https://larkchan.github.io/"
 languageCode = "zh-cn"
-title = "蚂蚁的花园"
+title = "Lark 的博客"
 theme = "PaperMod"
+enableRobotsTXT = true
 
+# Hugo v0.128+ 的分页新写法
 [pagination]
   pagerSize = 10
 
+# 允许文章内原始 HTML（如 iframe、视频等）
+[markup.goldmark.renderer]
+  unsafe = true
+
+# -------- PaperMod 常用参数（极简/时间线风）--------
 [params]
-  defaultTheme = "light"
-  disableThemeToggle = true
+  defaultTheme = "light"         # 默认浅色
+  disableThemeToggle = true      # 隐藏深浅色切换
   DateFormat = "2006-01-02"
   ShowReadingTime = false
   ShowShareButtons = false
   ShowCodeCopyButtons = true
-  mainSections = ["daily","posts"]
+  mainSections = ["daily","posts"]   # 首页拉取的目录（把你的文章放到这两个目录下）
 
+  [params.homeInfoParams]
+    Title = "Daily"
+    Content = "记录每天一点点"
+
+# 顶部菜单：归档
 [menu]
   [[menu.main]]
-    name = "采蜜见闻"
+    name = "归档"
     url = "/archives/"
     weight = 10
 
-      [[menu.main]]
-    name = "碎念集"
-    url = "/daily/"
-    weight = 10
-
+# 输出（含 RSS/JSON，PaperMod 推荐）
 [outputs]
-  home = ["HTML","RSS","JSON"]
+  home = ["HTML", "RSS", "JSON"]
 
+# 固定链接（可按需修改）
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
   daily = "/:year/:month/:day/:slug/"
