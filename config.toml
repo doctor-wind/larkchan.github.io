@@ -1,8 +1,10 @@
-baseURL = "https://doctor-wind.github.io/larkchan.github.io/"
+baseURL = "https://larkchan.github.io/"
 languageCode = "zh-cn"
-title = "蚂蚁的花园"
+title = "Lark 的博客"
 theme = "PaperMod"
-paginate = 10
+
+[pagination]
+  pagerSize = 10
 
 [params]
   defaultTheme = "light"
@@ -13,20 +15,15 @@ paginate = 10
   ShowCodeCopyButtons = true
   mainSections = ["daily","posts"]
 
-  [params.homeInfoParams]
-    Title = "Daily"
-    Content = "蚁路碎语"
-
 [menu]
   [[menu.main]]
-    name = "每周采蜜"
+    name = "归档"
     url = "/archives/"
     weight = 10
 
 [outputs]
   home = ["HTML","RSS","JSON"]
 
-# 按日期的固定链接（可改）
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
   daily = "/:year/:month/:day/:slug/"
