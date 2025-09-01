@@ -19,6 +19,7 @@ hasCJKLanguage = true          # 中文摘要支持
 # 输出格式
 [outputs]
   home = ["HTML", "RSS"]
+    section = ["HTML", "RSS"]
 
 [params]
   description = "A Nothing Big Blog"
@@ -29,10 +30,10 @@ hasCJKLanguage = true          # 中文摘要支持
   hideHeader = false
 
   # Homepage intro
-  homeIntroTitle = "🌱"
+   = "🌱"
   homeIntroContent = """
   这个世界就是花园一样绚烂多彩，我如蚂蚁般逛逛，偶尔停下来的时候，在树叶上做个记录。<br/>
-  <a href="/index.xml">Subscribe</a>
+  <a href="index.xml">Subscribe</a>
   """
 
   # Homepage collection
@@ -64,7 +65,7 @@ hasCJKLanguage = true          # 中文摘要支持
   # ✅ 页脚社交区（在原图标位置显示文字 Subscribe）
   [[params.social]]
     name = "Subscribe"
-    url  = "/index.xml"
+    url  = "index.xml"
 
   # 自定义样式
   customCSS = ["css/custom.css"]
