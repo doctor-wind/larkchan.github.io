@@ -1,4 +1,4 @@
-baseURL      = "baseURL“ = "https://doctor-wind.github.io/larkchan.github.io/"  # 末尾必须有 /   # 改成你的域名，必须以 / 结尾
+baseURL      = “baseURL” = "https://doctor-wind.github.io/larkchan.github.io/"  # 末尾一定有 / # 末尾必须有 /   # 改成你的域名，必须以 / 结尾
 title        = "The Garden of Ants"
 theme        = "typo"
 languageCode = "en-us"
