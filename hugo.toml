@@ -1,0 +1,89 @@
+baseURL      = "https://doctor-wind.github.io/larkchan.github.io/"   # 改成你的域名，必须以 / 结尾
+title        = "The Garden of Ants"
+theme        = "typo"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+
+# 摘要设置
+hasCJKLanguage = true          # 中文摘要支持
+
+# 固定链接格式（可选）
+[permalinks]
+  posts = "/posts/:year/:month/:slug/"
+
+# Hugo 原生分页
+[pagination]
+  pagerSize = 10
+
+# 输出格式
+[outputs]
+  home = ["HTML", "RSS"]
+
+[params]
+  description = "A Nothing Big Blog"
+
+  # Appearance
+  theme = "auto"              # auto / dark / light
+  colorPalette = "default"
+  hideHeader = false
+
+  # Homepage intro
+  homeIntroTitle = "🌱"
+  homeIntroContent = """
+  这个世界就是花园一样绚烂多彩，我如蚂蚁般逛逛，偶尔停下来的时候，在树叶上做个记录。<br/>
+  <a href="/index.xml">Subscribe</a>
+  """
+
+  # Homepage collection
+  homeCollectionTitle = "Posts"
+  homeCollection      = "posts"
+
+  # List & pagination
+  paginationSize = 10
+  listSummaries  = true
+  listDateFormat = "2006-01-02"
+
+  # Breadcrumbs
+  [params.breadcrumbs]
+    enabled = true
+    showCurrentPage = true
+    home = "Home"
+
+  # Footer
+  [params.footer]
+    since = 2025
+    name  = "Lark"
+    text  = "All rights reserved."
+
+  # ✅ 顶部菜单（只保留 Home）
+  [[params.menu]]
+    name = "Home"
+    url  = "/"
+
+  # ✅ 页脚社交区（在原图标位置显示文字 Subscribe）
+  [[params.social]]
+    name = "Subscribe"
+    url  = "/index.xml"
+
+  # 自定义样式
+  customCSS = ["css/custom.css"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority   = 0.5
+  filename   = "sitemap.xml"
+
+[markup]
+  [markup.highlight]
+    style = "algol"
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+# 隐私设置
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true
+  [privacy.twitter]
+    enableDNT = true

@@ -1,0 +1,2 @@
+/* 首页/列表中的文章标题链接加粗 */
+main h2 a { font-weight: 700 !important; }
