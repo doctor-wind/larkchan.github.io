@@ -30,7 +30,6 @@ hasCJKLanguage = true          # 中文摘要支持
   hideHeader = false
 
   # Homepage intro
-   = "🌱"
   homeIntroContent = """
   这个世界就是花园一样绚烂多彩，我如蚂蚁般逛逛，偶尔停下来的时候，在树叶上做个记录。<br/>
   <a href="index.xml">Subscribe</a>
