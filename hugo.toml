@@ -87,3 +87,10 @@ mainSections = ["posts"]
     privacyEnhanced = true
   [privacy.twitter]
     enableDNT = true
+
+# --- Google Analytics (GA4) ---
+googleAnalytics = "G-09506ENLJ2"
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-09506ENLJ2"
