@@ -24,6 +24,8 @@ hasCJKLanguage = true          # 中文摘要支持
 [params]
   description = "A Nothing Big Blog"
 
+mainSections = ["posts"]
+
   # Appearance
   theme = "auto"              # auto / dark / light
   colorPalette = "default"
