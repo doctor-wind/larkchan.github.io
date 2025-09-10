@@ -59,10 +59,8 @@ mainSections = ["posts"]
     text  = "All rights reserved."
 
   # ✅ 顶部菜单（只保留 Home）
-  [[params.menu]]
-    name = "Home"
-    url  = "/"
-
+ # params.menu]]
+  
   # ✅ 页脚社交区（在原图标位置显示文字 Subscribe）
   [[params.social]]
     name = "Subscribe"
