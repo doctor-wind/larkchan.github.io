@@ -88,7 +88,17 @@ mainSections = ["posts"]
   [privacy.twitter]
     enableDNT = true
 
-# --- Google Analytics (GA4) ---
+# ---  Google Analytics (GA4) ---
+[params.giscus]
+  enable = true
+  repo    = "doctor-wind/larkchan.github.io"
+  repoid  = "R_kgDOO2779Q"
+  category = "General"
+  categoryid = ""
+  mapping = "pathname"
+  theme   = "light"
+
+#
 googleAnalytics = "G-09506ENLJ2"
 
 [services]
