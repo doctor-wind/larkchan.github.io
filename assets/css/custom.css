@@ -17,7 +17,7 @@ main h2 a { font-weight: 700 !important; }
 }
 
 .intro p {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   color: var(--content-secondary);
   font-style: italic;
