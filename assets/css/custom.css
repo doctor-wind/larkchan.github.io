@@ -3,8 +3,10 @@ main h2 a { font-weight: 700 !important; }
 
 /* 纸张质感背景（轻微噪点纹理） */
 html {
-  background-color: #f4efe5;
+  background-color: #f7f4ee;
   background-image:
+    repeating-linear-gradient(0deg, rgba(90, 82, 70, 0.05) 0, rgba(90, 82, 70, 0.05) 1px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0) 9px),
+    repeating-linear-gradient(90deg, rgba(90, 82, 70, 0.03) 0, rgba(90, 82, 70, 0.03) 1px, rgba(255, 255, 255, 0) 4px, rgba(255, 255, 255, 0) 11px),
     url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNDAnIGhlaWdodD0nMTQwJyB2aWV3Qm94PScwIDAgMTQwIDE0MCc+CjxmaWx0ZXIgaWQ9J24nPjxmZVR1cmJ1bGVuY2UgdHlwZT0nZnJhY3RhbE5vaXNlJyBiYXNlRnJlcXVlbmN5PScuNicgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0nMTQwJyBoZWlnaHQ9JzE0MCcgZmlsdGVyPSd1cmwoI24pJyBvcGFjaXR5PScuMTInLz48L3N2Zz4=");
   background-repeat: repeat;
 }
