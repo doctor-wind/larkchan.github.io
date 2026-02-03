@@ -15,3 +15,15 @@ main h2 a { font-weight: 700 !important; }
   font-family: "Snell Roundhand", "Bradley Hand", "Segoe Print", "Apple Chancery", "Brush Script MT", "Comic Sans MS", cursive;
   letter-spacing: 0.01em;
 }
+
+.intro p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--content-secondary);
+  font-style: italic;
+}
+
+.intro p a {
+  color: var(--content-secondary);
+  font-style: italic;
+}
