@@ -5,3 +5,12 @@ main h2 a { font-weight: 700 !important; }
   font-size: 1em;
   line-height: 1;
 }
+
+.header-subtitle {
+  margin: 0.35em 0 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--content-secondary);
+  font-family: "Segoe Script", "Apple Chancery", "Brush Script MT", "Snell Roundhand", cursive;
+  letter-spacing: 0.01em;
+}
