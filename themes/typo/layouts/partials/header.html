@@ -5,7 +5,9 @@
     {{ if or (not (.Param "hideHeader")) .IsHome }}
 
     <h1 class="header-title">
-        <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
+        <a href="{{ site.BaseURL }}">
+            {{ site.Title }}{{ if .IsHome }} <span class="header-emoji" aria-hidden="true">🌳</span>{{ end }}
+        </a>
     </h1>
 
     <div class="header-menu">
