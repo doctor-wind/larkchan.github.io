@@ -6,11 +6,12 @@ main h2 a { font-weight: 700 !important; }
   line-height: 1;
 }
 
-.header-subtitle {
-  margin: 0.35em 0 0;
+.intro-en {
+  display: block;
+  margin-bottom: 0.2em;
   font-size: 1.05rem;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--content-secondary);
-  font-family: "Segoe Script", "Apple Chancery", "Brush Script MT", "Snell Roundhand", cursive;
+  font-family: "Snell Roundhand", "Bradley Hand", "Segoe Print", "Apple Chancery", "Brush Script MT", "Comic Sans MS", cursive;
   letter-spacing: 0.01em;
 }
