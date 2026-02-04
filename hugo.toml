@@ -35,7 +35,18 @@ mainSections = ["posts"]
   homeIntroContent = """
   <span class="intro-en">This world is as splendid and colorful as a garden; I wander like an ant, and when I pause from time to time, I leave a note on a leaf.</span>
   这个世界就是花园一样绚烂多彩，我如蚂蚁般逛逛，偶尔停下来的时候，在树叶上做个记录。<br/>
+  <span class="intro-icon" aria-hidden="true">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg>
+  </span>
   <a href="index.xml">Subscribe</a>
+  <span class="intro-icon intro-icon-spaced" aria-hidden="true">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.64 7.584H.468l8.6-9.83L0 1.153h7.594l5.243 6.932zM17.61 20.644h2.04L6.486 3.24H4.298z"/></svg>
+  </span>
+  <a href="https://x.com/kar_found" target="_blank" rel="noopener noreferrer">Twitter</a>
+  <span class="intro-icon intro-icon-spaced" aria-hidden="true">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.18 7.232c0-3.96-2.62-6.08-5.67-6.08-2.35 0-4.08 1.18-4.78 2.98-.1.26-.04.36.16.36h1.99c.18 0 .3-.08.36-.26.47-1.25 1.72-1.79 3.09-1.79 2.14 0 3.24 1.6 3.24 3.88v1.06h-3.25c-3.36 0-5.55 1.62-5.55 4.62 0 2.58 1.7 4.08 4.3 4.08 2.02 0 3.3-.88 4.07-2.1v1.68c0 .22.12.34.34.34h1.63c.22 0 .34-.12.34-.34V7.232zm-2.31 4.5c0 1.94-1.1 3.32-3.41 3.32-1.6 0-2.57-.86-2.57-2.31 0-1.58 1.13-2.48 3.25-2.48h2.73zM8.06 22.94c2.56 0 4.32-1.34 4.32-3.6 0-2.06-1.28-3.04-3.98-3.58l-1.5-.3c-1.54-.32-2.16-.72-2.16-1.54 0-.92.82-1.52 2.16-1.52 1.36 0 2.18.56 2.32 1.52.04.2.16.28.36.28h1.8c.22 0 .32-.1.3-.34-.12-2.08-1.84-3.36-4.76-3.36-2.66 0-4.38 1.32-4.38 3.46 0 2.02 1.38 3.06 3.82 3.54l1.5.3c1.56.32 2.3.74 2.3 1.62 0 1-.9 1.62-2.34 1.62-1.6 0-2.46-.62-2.68-1.62-.04-.2-.16-.28-.36-.28H1.9c-.22 0-.32.1-.3.34.14 2.2 2 3.64 5.04 3.64z"/></svg>
+  </span>
+  <a href="https://c7.io/@kar" target="_blank" rel="me noopener noreferrer">Mastodon</a>
   """
 
   # Homepage collection

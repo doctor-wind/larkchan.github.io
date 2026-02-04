@@ -27,3 +27,21 @@ main h2 a { font-weight: 700 !important; }
   color: var(--content-secondary);
   font-style: italic;
 }
+
+.intro-icon {
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 1;
+  vertical-align: -0.08em;
+  margin-right: 0.2em;
+}
+
+.intro-icon-spaced {
+  margin-left: 0.8em;
+}
+
+.intro-icon svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
